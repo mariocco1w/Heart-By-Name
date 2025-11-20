@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Corazón de {{ nombre }} 💖</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>💞 Para {{ nombre }} 💞</h1>
+        <pre class="heart">{{ corazon }}</pre>
+        <a href="/">💌 Crear otro corazón</a>
+    </div>
+    <div class="floating-hearts"></div>
+</body>
+</html>
