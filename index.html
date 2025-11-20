@@ -3,17 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Pumple 2.0 💖</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>💘 Pumple 2.0 💘</h1>
         <p>Escribe el nombre de tu persona especial</p>
-        <form method="POST">
-            <input type="text" name="nombre" placeholder="Su nombre..." required>
-            <button type="submit">Formar corazón ❤️</button>
-        </form>
+
+        <!-- SIN FORMULARIO, SIN POST -->
+        <input type="text" id="nombre" placeholder="Su nombre..." required>
+        <button onclick="generar()">Formar corazón ❤️</button>
+
+        <pre id="salida"></pre>
     </div>
+
     <div class="floating-hearts"></div>
+
+    <!-- Tu script que reemplaza al backend -->
+    <script src="script.js"></script>
 </body>
 </html>
